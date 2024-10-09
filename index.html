@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peddy Adoption Platform</title>
+    <!-- lato font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- daisy ui link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="font-sans antialiased">
+    <header class="max-w-7xl mx-auto">
+      <!-- nav-bar start-->
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a class="lato-regular">Home</a></li>
+                <li><a class="lato-regular">Shop</a></li>
+                <li><a class="lato-regular">Contact</a></li>
+              </ul>
+            </div>
+            <!-- <a class="btn btn-ghost text-xl">daisyUI</a> -->
+            <img
+              class="btn cover btn-ghost text-xl mx-size-[160px]"
+              src="images/nav-logo.png"
+              alt=""
+            />
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a class="lato-regular">Home</a></li>
+              <li><a class="lato-regular">Shop</a></li>
+              <li><a class="lato-regular">Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <!-- <a class="btn">Button</a> -->
+            <img class="btn btn-ghost text-xl" src="images/user.png" alt="" />
+          </div>
+        </div>
+      </nav>
+      <!-- nav-bar end-->
+    </header>
+    <main>
+      <!-- hero start -->
+      <section
+        class="hero flex flex-1 center lg:pt-[56px] md:pt-[40px] pt-[40px] lg:pb-[100px] md:pb-[60px] pb-[60px]"
+      >
+        <div class="hero-container flex-1 grow md:px-1 px-1 max-w-7xl mx-auto">
+          <div class="max-w-3xl mx-auto flex flex-col">
+            <p
+              class="lato-regular text-2xl font-regular text-center py-1"
+              style="color: #1f1b1b"
+            >
+              Bringing Families Together ❤️‍🔥
+            </p>
+            <h1
+              class="lato-bold text-4xl font-bold text-center md:text-6xl lg:text-7xl"
+            >
+              Your Path to Adoption Starts Here
+            </h1>
+            <p class="lato-regular text-center text-base py-8">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout. The
+              point of using Lorem Ipsum is that it has a.
+            </p>
+            <button class="btn btn btn-accent btn-outline mx-auto">
+              View More
+            </button>
+          </div>
+          <div class="max-w-3xl mx-auto">
+            <img class="lg:self-center" src="images/pet.webp" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- hero end -->
+
+      <!-- shop start -->
+      <section class="shop">
+        <div class="shop-container max-w-7xl mx-auto mb-3">
+          <div class="mx-auto max-w-2xl">
+            <h2 class="text-3xl font-bold text-center py-2">
+              Adopt Your Best Friend
+            </h2>
+            <p class="lato-regular text-center text-base pb-6 pt-2">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout. The
+              point of using Lorem Ipsum is that it has a.
+            </p>
+          </div>
+
+          <!-- category start-->
+          <div id="category" class="py-3 flex gap-5 justify-center"></div>
+          <!-- category end-->
+
+          <!-- sort button and heading start -->
+          <div class="py-[32px]"></div>
+          <!-- sort button and heading end -->
+
+          <!-- card container start -->
+
+          <div class="flex gap-1 justify-between">
+            <!-- card main container -->
+            <div
+              id="pets"
+              class="grow relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
+            >
+              <!-- <div
+                class="card w-96 border-solid border-2 border-teal-400 p-[20px]"
+              >
+                <figure class="px-0 pt-">
+                  <img
+                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                    alt="Shoes"
+                    class="rounded-xl object-cover"
+                  />
+                </figure>
+                <div class="card items-start text-start mt-[24px] flex gap-2">
+                  <h2 class="card-title font-bold text-xl mb-[8px]">Shoes!</h2>
+                  <div class="flex justify-center">
+                    <img
+                      class="w-[20px] h-[20px] object-cover mr-2"
+                      src="images/Breed.png"
+                      alt=""
+                    />
+                    <p class="text-sm text-gray-500">Breed: Golder retriever</p>
+                  </div>
+
+                  <div class="flex justify-center">
+                    <img
+                      class="w-[20px] h-[20px] object-cover mr-2"
+                      src="images/birth.png"
+                      alt=""
+                    />
+                    <p class="text-sm text-gray-500">Birth: 2024</p>
+                  </div>
+
+                  <div class="flex justify-center">
+                    <img
+                      class="w-[20px] h-[20px] object-cover mr-2"
+                      src="images/gender.png"
+                      alt=""
+                    />
+                    <p class="text-sm text-gray-500">Gender: Female</p>
+                  </div>
+
+                  <div class="flex justify-center">
+                    <img
+                      class="w-[20px] h-[20px] object-cover mr-2"
+                      src="images/price.png"
+                      alt=""
+                    />
+                    <p class="text-sm text-gray-500">Price : 199$</p>
+                  </div>
+                  <div class="w-full h-[1px] my-4 bg-teal-600"></div>
+
+                  <div class="card-actions w-full">
+                    <button class="btn btn-secondary object-cover">
+                      <img src="images/like.png" alt="" />
+                    </button>
+                    <button class="btn btn-primary">Adopt</button>
+                    <button class="btn btn-primary">Details</button>
+                  </div>
+                </div>
+              </div> -->
+
+              <div id="loadingIndicator" class="hidden">
+                <span class="loading loading-bars loading-lg"></span>
+              </div>
+            </div>
+
+            <!-- image selected container -->
+            <div class="grow bg-red-300 max-w-xs ml-[24px]">
+              <div
+                class="card w-[312px] border-solid border-2 border-teal-400 p-[20px]"
+              >
+                <figure class="px-0 pt-">
+                  <img
+                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                    alt="Shoes"
+                    class="rounded-xl object-cover"
+                  />
+                </figure>
+                <div class="card items-start text-start mt-[24px] flex gap-2">
+                  <h2 class="card-title font-bold text-xl mb-[8px]">Shoes!</h2>
+                  <div class="flex justify-center">
+                    <img
+                      class="w-[20px] h-[20px] object-cover mr-2"
+                      src="images/Breed.png"
+                      alt=""
+                    />
+                    <p class="text-sm text-gray-500">Breed: Golder retriever</p>
+                  </div>
+
+                  <div class="flex justify-center">
+                    <img
+                      class="w-[20px] h-[20px] object-cover mr-2"
+                      src="images/birth.png"
+                      alt=""
+                    />
+                    <p class="text-sm text-gray-500">Birth: 2024</p>
+                  </div>
+
+                  <div class="flex justify-center">
+                    <img
+                      class="w-[20px] h-[20px] object-cover mr-2"
+                      src="images/gender.png"
+                      alt=""
+                    />
+                    <p class="text-sm text-gray-500">Gender: Female</p>
+                  </div>
+
+                  <div class="flex justify-center">
+                    <img
+                      class="w-[20px] h-[20px] object-cover mr-2"
+                      src="images/price.png"
+                      alt=""
+                    />
+                    <p class="text-sm text-gray-500">Price : 199$</p>
+                  </div>
+                  <div class="w-full h-[1px] my-4 bg-teal-600"></div>
+
+                  <div class="card-actions w-full">
+                    <button class="btn btn-secondary object-cover">
+                      <img src="images/like.png" alt="" />
+                    </button>
+                    <button class="btn btn-primary">Adopt</button>
+                    <button class="btn btn-primary">Details</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- card container end -->
+        </div>
+      </section>
+
+      <!-- shop end -->
+    </main>
+
+    <!-- Scripts link file -->
+    <script src="script.js"></script>
+    <script src="test.js"></script>
+  </body>
+</html>
